@@ -14,16 +14,16 @@
 ;;; Commentary:
 
 ;; A dark color theme available for a number of editors.
+;; Modified to use terminal background color in no-x mode
 
 ;;; Code:
 (require 'cl-lib)
 (deftheme dracula)
 (if (display-graphic-p) (setq bg1 "#282a36") (setq bg1 nil))
-(let ((colors '((fg1          "#f8f8f2")      ; Assigment form: VARIABLE COLOR [TTY-COLOR]
+(let ((colors '((fg1          "#f8f8f2")
                 (fg2          "#e2e2dc")
                 (fg3          "#ccccc7")
                 (fg4          "#b6b6b2")
-                ;(bg1          "#282a36" "#282a36")
                 (bg2          "#373844")
                 (bg3          "#464752")
                 (bg4          "#565761")
